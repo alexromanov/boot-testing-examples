@@ -70,14 +70,4 @@ public class HeraclesE2EUiTest {
         assertThat(mainPage.getCurrentEnteredValue())
                 .isEqualTo("");
     }
-
-    @Test
-    public void shouldConvertValueAfterSuccessfullConversion() {
-        MainPage mainPage = new MainPage(driver);
-        ResultPage resultPage = mainPage.convertValue("1600");
-        assertThat(resultPage.getConvertedValue()).contains("1 600.00");
-        mainPage = resultPage.navigateToConvertValue();
-        assertThat(mainPage.getPageTitle()).as("Page Title is not equal to expected")
-                                           .isEqualTo(driver.getTitle());
-    }
 }
