@@ -28,7 +28,7 @@ public class HeraclesE2EUiTest {
 
     @BeforeClass
     public static void beforeAll() {
-        WebDriverManager.chromedriver().version("77.0.3865.40").setup();
+        WebDriverManager.chromedriver().version("79.0.3945.36").setup();
     }
 
     @Before

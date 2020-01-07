@@ -35,7 +35,9 @@ public class HeraclesE2EApiTest {
 		ConversionRequest request = ConversionRequest.builder()
 				.inputValue(1600)
 				.build();
+
 		String value = gson.toJson(request);
+
 		mvc.perform(post("/convert")
 				.contentType("application/json")
 				.content(value))
