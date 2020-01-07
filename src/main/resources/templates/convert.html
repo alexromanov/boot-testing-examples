@@ -23,10 +23,15 @@
 			<p id="errorMessage" th:if="${#fields.hasErrors('value')}" th:errors="*{value}"
 			   class="alert alert-danger"></p>
 		</div>
-		<p>
-			<input id="submit" type="submit" value="Submit"/>
-			<input id="reset" type="reset" value="Reset" />
-		</p>
+		<div class="col-md-12">
+			<p>
+				<input id="submit" type="submit" value="Submit"/>
+				<input id="reset" type="reset" value="Reset" />
+			</p>
+		</div>
+		<div class="col-md-12">
+			<a id="currentRates" href="/rates/current">Show current exchange rates</a>
+		</div>
 	</form>
 </div>
 </body>
