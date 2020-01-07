@@ -3,7 +3,7 @@ package com.alexromanov.cuconv.entity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import java.util.List;
+import java.util.Map;
 
 @Data
 public class ExchangeRateResponse {
@@ -12,5 +12,5 @@ public class ExchangeRateResponse {
 	@JsonProperty("date")
 	private String date;
 	@JsonProperty("rates")
-	private List<ExchangeRate> rates;
+	private Map<String, Long> rates;
 }
