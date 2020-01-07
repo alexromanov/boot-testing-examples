@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Conversion Result</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 id="resultMessage">Money Conversion Result</h1>
+			<span id="convertedResult" th:text="'Converted: ' + ${converted}" />
+		</div>
+		<div class="col-md-12">
+			<a id="convert" href="/">Convert another value</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
