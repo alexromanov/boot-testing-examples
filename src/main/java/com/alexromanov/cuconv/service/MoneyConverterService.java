@@ -1,9 +1,9 @@
 package com.alexromanov.cuconv.service;
 
+import org.springframework.stereotype.Service;
+
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-
-import org.springframework.stereotype.Service;
 
 @Service
 public class MoneyConverterService {
@@ -14,6 +14,7 @@ public class MoneyConverterService {
         inputMoney = inputMoney.replace(',', '.');
         DecimalFormatSymbols symbols = DecimalFormatSymbols.getInstance();
         symbols.setGroupingSeparator(' ');
+        symbols.setDecimalSeparator('.');
 
         DecimalFormat formatter = new DecimalFormat("###,##0.00", symbols);
         String formatted = "";
