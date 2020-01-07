@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Current exchange rates</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<span id="ratesBase" th:text="${currentRates.base}" />
+
+		</div>
+		<div class="col-md-12">
+			<span id="ratesDate" th:text="${currentRates.date}" />
+		</div>
+		<div class="col-md-12">
+			<ul th:each="rate: ${currentRates.rates}">
+				<li th:text="${rate.key}" />
+				<li th:text="${rate.value}" />
+			</ul>
+		</div>
+		<div class="col-md-12">
+			<a id="convert" href="/">Go back to conversion</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
