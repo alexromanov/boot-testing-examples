@@ -9,17 +9,23 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<span id="ratesBase" th:text="${currentRates.base}" />
-
+			<div class="col-md-6">
+				<span id="ratesBase" th:text="'Base currency: ' + ${currentRates.base}" />
+			</div>
+			<div class="col-md-6">
+				<span id="ratesDate" th:text="'By date: ' + ${currentRates.date}" />
+			</div>
 		</div>
 		<div class="col-md-12">
-			<span id="ratesDate" th:text="${currentRates.date}" />
-		</div>
-		<div class="col-md-12">
-			<ul th:each="rate: ${currentRates.rates}">
-				<li th:text="${rate.key}" />
-				<li th:text="${rate.value}" />
-			</ul>
+			<div class="col-md-6">
+				<span id="ratesList">Rates: </span>
+			</div>
+			<div th:each="rate: ${currentRates.rates}">
+				<div class="col-md-6">
+					<span th:text="${rate.key}"></span>
+					<span th:text="${rate.value}"></span>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-12">
 			<a id="convert" href="/">Go back to conversion</a>
