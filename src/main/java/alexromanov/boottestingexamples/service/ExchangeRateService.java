@@ -1,6 +1,6 @@
-package com.alexromanov.cuconv.service;
+package alexromanov.boottestingexamples.service;
 
-import com.alexromanov.cuconv.entity.ExchangeRateResponse;
+import alexromanov.boottestingexamples.entity.ExchangeRateResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

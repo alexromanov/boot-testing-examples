@@ -1,7 +1,7 @@
-package com.alexromanov.cuconv.controller;
+package alexromanov.boottestingexamples.controller;
 
-import com.alexromanov.cuconv.entity.ExchangeRateResponse;
-import com.alexromanov.cuconv.service.ExchangeRateService;
+import alexromanov.boottestingexamples.entity.ExchangeRateResponse;
+import alexromanov.boottestingexamples.service.ExchangeRateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;

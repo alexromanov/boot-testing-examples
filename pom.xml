@@ -8,11 +8,11 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.alexromanov</groupId>
-	<artifactId>cu-conv</artifactId>
+	<groupId>alexromanov</groupId>
+	<artifactId>boot-testing-examples</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cu-conv</name>
-	<description>Currency converter app as a demo project</description>
+	<name>boot-testing-examples</name>
+	<description>Spring Boot based project for testing examples</description>
 
 	<properties>
 		<java.version>11</java.version>

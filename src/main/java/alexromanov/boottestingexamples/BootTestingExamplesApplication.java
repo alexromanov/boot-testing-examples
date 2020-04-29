@@ -1,13 +1,13 @@
-package com.alexromanov.cuconv;
+package alexromanov.boottestingexamples;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CuConvApplication {
+public class BootTestingExamplesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CuConvApplication.class, args);
+		SpringApplication.run(BootTestingExamplesApplication.class, args);
 	}
 
 }

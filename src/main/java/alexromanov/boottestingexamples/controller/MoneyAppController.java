@@ -1,9 +1,9 @@
-package com.alexromanov.cuconv.controller;
+package alexromanov.boottestingexamples.controller;
 
-import com.alexromanov.cuconv.entity.ConvertMoneyForm;
-import com.alexromanov.cuconv.entity.ExchangeRateResponse;
-import com.alexromanov.cuconv.service.ExchangeRateService;
-import com.alexromanov.cuconv.service.MoneyConverterService;
+import alexromanov.boottestingexamples.entity.ConvertMoneyForm;
+import alexromanov.boottestingexamples.entity.ExchangeRateResponse;
+import alexromanov.boottestingexamples.service.ExchangeRateService;
+import alexromanov.boottestingexamples.service.MoneyConverterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

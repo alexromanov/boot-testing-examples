@@ -1,4 +1,4 @@
-package com.alexromanov.cuconv.entity;
+package alexromanov.boottestingexamples.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

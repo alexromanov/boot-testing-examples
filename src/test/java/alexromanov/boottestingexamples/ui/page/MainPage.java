@@ -1,4 +1,4 @@
-package com.alexromanov.cuconv.ui.page;
+package alexromanov.boottestingexamples.ui.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

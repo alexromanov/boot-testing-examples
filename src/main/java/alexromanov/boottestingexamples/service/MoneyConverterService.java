@@ -1,4 +1,4 @@
-package com.alexromanov.cuconv.service;
+package alexromanov.boottestingexamples.service;
 
 import org.springframework.stereotype.Service;
 

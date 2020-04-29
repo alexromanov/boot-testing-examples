@@ -1,4 +1,4 @@
-package com.alexromanov.cuconv.configuration;
+package alexromanov.boottestingexamples.configuration;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import org.springframework.boot.web.client.RestTemplateBuilder;

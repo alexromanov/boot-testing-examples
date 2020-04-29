@@ -1,6 +1,6 @@
-package com.alexromanov.cuconv.api;
+package alexromanov.boottestingexamples.api;
 
-import com.alexromanov.cuconv.entity.ConversionRequest;
+import alexromanov.boottestingexamples.entity.ConversionRequest;
 import com.google.gson.Gson;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class HeraclesE2EApiTest {
+public class BootTestingApiTest {
 	@Autowired
 	private MockMvc mvc;
 

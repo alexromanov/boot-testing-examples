@@ -1,8 +1,8 @@
-package com.alexromanov.cuconv.controller;
+package alexromanov.boottestingexamples.controller;
 
-import com.alexromanov.cuconv.entity.ConversionRequest;
-import com.alexromanov.cuconv.entity.ConversionResponse;
-import com.alexromanov.cuconv.service.MoneyConverterService;
+import alexromanov.boottestingexamples.entity.ConversionRequest;
+import alexromanov.boottestingexamples.entity.ConversionResponse;
+import alexromanov.boottestingexamples.service.MoneyConverterService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;

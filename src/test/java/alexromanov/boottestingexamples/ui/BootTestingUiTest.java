@@ -1,7 +1,7 @@
-package com.alexromanov.cuconv.ui;
+package alexromanov.boottestingexamples.ui;
 
-import com.alexromanov.cuconv.ui.page.MainPage;
-import com.alexromanov.cuconv.ui.page.ResultPage;
+import alexromanov.boottestingexamples.ui.page.MainPage;
+import alexromanov.boottestingexamples.ui.page.ResultPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class HeraclesE2EUiTest {
+public class BootTestingUiTest {
     private static final String BASE_URL = "http://127.0.0.1";
 
     @LocalServerPort
