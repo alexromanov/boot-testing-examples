@@ -28,7 +28,7 @@ public class BootTestingUiTest {
 
     @BeforeClass
     public static void beforeAll() {
-        WebDriverManager.chromedriver().version("79.0.3945.36").setup();
+        WebDriverManager.chromedriver().setup();
     }
 
     @Before
