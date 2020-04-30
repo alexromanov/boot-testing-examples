@@ -1,13 +1,16 @@
 package alexromanov.boottestingexamples.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 
 @Service
+@Slf4j
 public class MoneyConverterService {
     public String formatMoney(String inputMoney) {
+        log.info("Received value for conversion: {}", inputMoney);
         if (inputMoney == null || inputMoney.isEmpty()) {
             return inputMoney;
         }
@@ -21,8 +24,9 @@ public class MoneyConverterService {
         try {
             formatted = formatter.format(Double.parseDouble(inputMoney));
         } catch (NumberFormatException ex) {
-            ex.printStackTrace();
+            log.error(ex.getMessage());
         }
+        log.info("Formatted result: {}", formatted);
         return formatted;
     }
 
