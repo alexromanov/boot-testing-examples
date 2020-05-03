@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
     private final WebDriver driver;
-    private static final String PAGE_TITLE = "Convert Money";
+    private static final String PAGE_TITLE = "Format Money";
     @FindBy(id = "inputValueForConversion")
     private WebElement conversionInput;
     @FindBy(id = "submit")

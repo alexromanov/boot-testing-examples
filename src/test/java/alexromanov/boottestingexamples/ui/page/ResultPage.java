@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ResultPage {
-    private static final String PAGE_TITLE = "Conversion Result";
+    private static final String PAGE_TITLE = "Formatted Result";
 
     @FindBy(id = "convertedResult")
     private WebElement conversionResult;

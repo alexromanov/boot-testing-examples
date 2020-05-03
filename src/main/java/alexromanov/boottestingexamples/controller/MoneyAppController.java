@@ -3,7 +3,7 @@ package alexromanov.boottestingexamples.controller;
 import alexromanov.boottestingexamples.entity.ConvertMoneyForm;
 import alexromanov.boottestingexamples.entity.ExchangeRateResponse;
 import alexromanov.boottestingexamples.service.ExchangeRateService;
-import alexromanov.boottestingexamples.service.MoneyConverterService;
+import alexromanov.boottestingexamples.service.FormatterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,7 +16,7 @@ import javax.validation.Valid;
 @Controller
 public class MoneyAppController {
 	@Autowired
-    private MoneyConverterService moneyConverterService;
+    private FormatterService formatterService;
 	@Autowired
 	private ExchangeRateService exchangeRateService;
 
@@ -32,7 +32,7 @@ public class MoneyAppController {
         if (errors.hasErrors()) {
             return "convert";
         }
-        String convertResult = moneyConverterService.formatMoney(convertMoneyForm.getValue());
+        String convertResult = formatterService.formatMoney(convertMoneyForm.getValue());
         model.addAttribute("converted", convertResult);
         return "result";
     }

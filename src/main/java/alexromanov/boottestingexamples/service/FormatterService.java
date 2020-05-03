@@ -8,9 +8,9 @@ import java.text.DecimalFormatSymbols;
 
 @Service
 @Slf4j
-public class MoneyConverterService {
+public class FormatterService {
     public String formatMoney(String inputMoney) {
-        log.info("Received value for conversion: {}", inputMoney);
+        log.info("Received value for formatting: {}", inputMoney);
         if (inputMoney == null || inputMoney.isEmpty()) {
             return inputMoney;
         }

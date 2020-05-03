@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ConversionRequest {
+public class FormatRequest {
     @JsonProperty("inputValue")
     private double inputValue;
 }

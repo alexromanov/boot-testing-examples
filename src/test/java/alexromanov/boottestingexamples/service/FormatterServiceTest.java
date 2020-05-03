@@ -11,7 +11,7 @@ import org.junit.runners.Parameterized;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(Parameterized.class)
-public class MoneyConverterServiceTest {
+public class FormatterServiceTest {
     @Parameterized.Parameters
     public static Collection<String[]> data() {
         return Arrays.asList(new String[][]{
@@ -34,17 +34,17 @@ public class MoneyConverterServiceTest {
     @Parameterized.Parameter(1)
     public String expected;
 
-    private MoneyConverterService moneyConverterService;
+    private FormatterService formatterService;
 
     @Before
     public void beforeTest() {
-        moneyConverterService = new MoneyConverterService();
+        formatterService = new FormatterService();
     }
 
     @Test
-    public void shouldConvertValue() {
+    public void shouldFormatValue() {
         assertThat(expected)
-                .as("Invalid result of money conversion")
-                .isEqualTo(moneyConverterService.formatMoney(input));
+                .as("Invalid result of money formatting")
+                .isEqualTo(formatterService.formatMoney(input));
     }
 }

@@ -1,6 +1,6 @@
 package alexromanov.boottestingexamples.api;
 
-import alexromanov.boottestingexamples.entity.ConversionRequest;
+import alexromanov.boottestingexamples.entity.FormatRequest;
 import com.google.gson.Gson;
 import org.junit.Before;
 import org.junit.Test;
@@ -32,13 +32,13 @@ public class BootTestingApiTest {
 
 	@Test
 	public void shouldReturnConvertedResult() throws Exception {
-		ConversionRequest request = ConversionRequest.builder()
-				.inputValue(1600)
-				.build();
+		FormatRequest request = FormatRequest.builder()
+                                             .inputValue(1600)
+                                             .build();
 
 		String value = gson.toJson(request);
 
-		mvc.perform(post("/convert")
+		mvc.perform(post("/format")
 				.contentType("application/json")
 				.content(value))
 				.andExpect(status().isOk())

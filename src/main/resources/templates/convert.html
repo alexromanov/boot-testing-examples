@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Convert Money</title>
+	<title>Format Money</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet"
 		  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -14,10 +14,10 @@
 </head>
 <body>
 <div class="container">
-	<h1>Format Money Application</h1>
+	<h1>Money Application</h1>
 	<form action="#" th:action="@{/}" th:object="${convertMoneyForm}" method="post">
 		<div class="form-group">
-			<label>Perform money conversion:</label>
+			<label>Perform money formatting:</label>
 			<input type="text" class="form-control" id="inputValueForConversion" placeholder="Enter Value" name="value" th:field="*{value}">
 			<br />
 			<p id="errorMessage" th:if="${#fields.hasErrors('value')}" th:errors="*{value}"

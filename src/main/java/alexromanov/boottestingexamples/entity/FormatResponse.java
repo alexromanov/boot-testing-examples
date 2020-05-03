@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ConversionResponse {
+public class FormatResponse {
     @JsonProperty("status")
     private String status;
     @JsonProperty("initialValue")
