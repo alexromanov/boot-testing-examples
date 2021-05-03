@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class BootTestingUiTest {
+public class WebDriverUiTest {
     private static final String BASE_URL = "http://127.0.0.1";
 
     @LocalServerPort

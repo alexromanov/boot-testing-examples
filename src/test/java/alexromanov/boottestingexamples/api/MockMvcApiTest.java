@@ -19,31 +19,31 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class BootTestingApiTest {
-	@Autowired
-	private MockMvc mvc;
+public class MockMvcApiTest {
+    @Autowired
+    private MockMvc mvc;
 
-	private Gson gson;
+    private Gson gson;
 
-	@Before
-	public void beforeTest() {
-		gson = new Gson();
-	}
+    @Before
+    public void beforeTest() {
+        gson = new Gson();
+    }
 
-	@Test
-	public void shouldReturnConvertedResult() throws Exception {
-		FormatRequest request = FormatRequest.builder()
-                                             .inputValue(1600)
-                                             .build();
+    @Test
+    public void shouldReturnConvertedResult() throws Exception {
+        FormatRequest request = FormatRequest.builder()
+                .inputValue(1600)
+                .build();
 
-		String value = gson.toJson(request);
+        String value = gson.toJson(request);
 
-		mvc.perform(post("/format")
-				.contentType("application/json")
-				.content(value))
-				.andExpect(status().isOk())
-				.andExpect(jsonPath("$.status").value("success"))
-				.andExpect(jsonPath("$.initialValue").value("1600.0"))
-				.andExpect(jsonPath("$.convertedValue").value("1 600.00"));
-	}
+        mvc.perform(post("/format")
+                .contentType("application/json")
+                .content(value))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.status").value("success"))
+                .andExpect(jsonPath("$.initialValue").value("1600.0"))
+                .andExpect(jsonPath("$.convertedValue").value("1 600.00"));
+    }
 }
